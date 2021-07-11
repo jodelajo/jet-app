@@ -1,0 +1,27 @@
+.navBar{
+    background-color: #020202;
+    border-bottom: 1px solid #ffc300;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: fixed;
+    width: 100%;
+}
+
+.name, .menu {
+    color: #ffc300;
+    width: 40%;
+}
+
+.name {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.menu {
+    color: white;
+    text-align: end;
+    padding-right: 20px;
+}

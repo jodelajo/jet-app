@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Open+Sans:wght@300;400;800&display=swap');
+
+:root {
+--colors-yellow: hsl(46, 100, 50);
+--colors-gray: hsl(0, 0, 44);
+--colors-dark: hsl(0, 0, 1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 786px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 8rem;
+  }
 }
