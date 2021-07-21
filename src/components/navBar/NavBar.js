@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
     return (<div className={styles.navBar}>
-        <div className={styles.name}>Vrolijke Noo♪zaak</div>
+        <div className={styles.name}>Vrolijke Noo<span className={styles.noot}>♪</span>zaak</div>
         <div className={styles.menu}>
             <NavLink exact to="/" className={styles.link} activeClassName={styles.active}>Home</NavLink>
             <NavLink to="/coaching" className={styles.link} activeClassName={styles.active}>Coaching en Mediation</NavLink>

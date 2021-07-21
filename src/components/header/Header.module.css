@@ -31,6 +31,7 @@
     height: 400px;
     -webkit-animation: slide 1s forwards;
     animation: slide 1s forwards;
+    /* animation-timing-function: ease-in-out; */
 }
 
 @-webkit-keyframes slide {

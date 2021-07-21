@@ -1,0 +1,25 @@
+
+.blocks {
+    /* min-height: 24rem; */
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(237, 237, 237);
+    align-items: stretch;
+    text-align: center;
+}
+
+.blocks1 {
+    /* width: 70%; */
+    margin: 0 30rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(179, 179, 179);
+    text-align: center;
+    align-items: center;
+    padding: 3rem 18rem 8rem 18rem;
+   justify-content: center;
+}
+

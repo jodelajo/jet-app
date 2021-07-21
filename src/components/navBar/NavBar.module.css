@@ -19,8 +19,12 @@
 .name {
     text-align: left;
     padding-left: 20px;
-    color: #ffc300;
+    color: #fff;
+    font-weight: 600;
     
+}
+.noot {
+    color: #ffc300;
 }
 
 .menu {
