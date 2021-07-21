@@ -1,23 +1,26 @@
 .navBar{
+    /* background-color:  #626262; */
+    /* border-bottom: 1px solid rgb(216, 216, 216); */
     background-color: #020202;
-    border-bottom: 1px solid #ffc300;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    font-family: "Montserrat", sans-serif;
     position: fixed;
     width: 100%;
 }
 
 .name, .menu {
-    color: #ffc300;
+    color: #020202;
     width: 40%;
 }
 
 .name {
     text-align: left;
     padding-left: 20px;
+    color: #ffc300;
+    
 }
 
 .menu {
@@ -25,3 +28,16 @@
     text-align: end;
     padding-right: 20px;
 }
+
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.active {
+    color: #ffc300;
+}
+
