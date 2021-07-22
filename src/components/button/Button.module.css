@@ -1,5 +1,5 @@
 .button {
-    background-color: #ffc300;
+    background-color: var(--colors-yellow);
     margin: 3rem auto 1rem auto;
     padding: 1rem;
     border-radius: 32px;
@@ -9,6 +9,6 @@
 
 .link {
     text-decoration: none;
-    color: white;
+    color: var(--colors-white);
     font-family: "Montserrat", sans-serif;
 }

@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
   margin: 0;
-  background: url("../../assets/slider_jet_pan.png") no-repeat right top fixed;
+  background: url("../../assets/slider_jet_note.png") no-repeat right top fixed;
   width: 100%;
   height: auto;
   background-size: contain;
@@ -52,9 +52,9 @@
 h1 {
   font-size: 4rem;
   font-weight: 500;
-  color: #fff;
+  color: var(--colors-white);
   text-align: end;
-  background-color: #ffc300;
+  background-color: var(--colors-yellow);
   /* min-width: 50%; */
   border-bottom-right-radius: 42px;
   border-top-right-radius: 42px;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .punt {
-  color: #fff;
+  color: var(--colors-white);
 }
 
 @media only screen and (min-width: 2000px) {

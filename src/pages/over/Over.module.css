@@ -3,4 +3,16 @@
     flex-direction: column;
     padding: 0;
     flex: 1;
+    background-color: var(--colors-gray);
+}
+
+.content {
+    margin: 6rem;
+    padding: 4rem;
+    background-color: var(--colors-white);
+}
+
+.blok {
+    display: flex;
+    /* flex-direction: row; */
 }

@@ -1,7 +1,7 @@
 .navBar{
     /* background-color:  #626262; */
     /* border-bottom: 1px solid rgb(216, 216, 216); */
-    background-color: #020202;
+    background-color: var(--colors-dark);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -12,29 +12,29 @@
 }
 
 .name, .menu {
-    color: #020202;
+    color: var(--colors-dark);
     
 }
 
 .name {
     text-align: left;
     padding-left: 20px;
-    color: #fff;
+    color: var(--colors-white);
     font-weight: 600;
     
 }
 .noot {
-    color: #ffc300;
+    color: var(--colors-yellow);
 }
 
 .menu {
-    color: white;
+    color: var(--colors-white);
     text-align: end;
     padding-right: 20px;
 }
 
 .link {
-    color: white;
+    color: var(--colors-white);
     text-decoration: none;
     padding: 6px 12px;
     font-size: 1.2rem;
@@ -42,6 +42,6 @@
 }
 
 .active {
-    color: #ffc300;
+    color: var(--colors-yellow);
 }
 

@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background-color: rgb(237, 237, 237);
+    background-color: var(--colors-gray);
     align-items: stretch;
     text-align: center;
 }
@@ -15,7 +15,7 @@
 .blocks1 {
     /* width: 70%; */
     margin: 0 8rem;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
     text-align: center;
     align-items: center;

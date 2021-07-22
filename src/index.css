@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
---colors-yellow: hsl(46, 100, 50);
---colors-gray: hsl(0, 0, 44);
---colors-dark: hsl(0, 0, 1);
+--colors-yellow: rgb(255, 195, 0);
+/* --colors-yellow: rgb(152, 0, 0); */
+--colors-gray: rgb(242, 242, 242);
+--colors-dark: #020202;
+--colors-white: #FFFFFF;
 }
 
 body {

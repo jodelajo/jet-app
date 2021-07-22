@@ -3,6 +3,13 @@
     flex-direction: column;
     padding: 0;
     flex: 1;
+
 }
 
+.drieblok {
+    padding: 4rem 0 1rem 0;
+    display: flex;
+    background-color: var(--colors-gray);
+    align-items: stretch;
+}
 
