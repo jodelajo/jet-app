@@ -1,0 +1,14 @@
+.button {
+    background-color: #ffc300;
+    margin: 3rem auto 1rem auto;
+    padding: 1rem;
+    border-radius: 32px;
+    width: 50%;
+    box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}

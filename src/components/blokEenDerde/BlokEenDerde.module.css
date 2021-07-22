@@ -17,12 +17,12 @@
 .blocks1, .blocks2 {
     text-align: center;
     justify-content: center;
+    padding-bottom: 2rem;
     /* min-height: 26rem; */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    padding-bottom: 2rem;
 }
 
 .blocks1 {

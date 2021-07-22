@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./BlokTweeDerde.module.css";
 
+import Button from "../button/Button";
+
 function BlokTweeDerde() {
   return (
     <div className={styles.blocks}>
@@ -11,6 +13,10 @@ function BlokTweeDerde() {
         feedback toepas. Als het nodig is af en toe de randen op te zoeken om
         jouw/jullie potentieel optimaal te benutten doe ik dat. Ik ben pas
         tevreden als jij tevreden bent en we onze doelen bereikt hebben.
+        <Button
+          buttonText={"Meer over mijn werkwijze"}
+          buttonLink={"/werkwijze"}
+        />
       </div>
       <div className={styles.blocks2}>
         <div className={styles.test}>

@@ -2,7 +2,7 @@
 .blocks {
     /* min-height: 24rem; */
     padding-top: 4rem;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,12 +16,13 @@
     /* width: 70%; */
     margin: 0 8rem;
     background-color: rgb(255, 255, 255);
-    box-shadow: 3px 3px 5px rgb(179, 179, 179);
+    box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
     text-align: center;
     align-items: center;
-    padding: 3rem 8rem 8rem 8rem;
+    padding: 3rem 8rem;
    justify-content: center;
 }
+
 
 @media only screen and (min-width: 2000px) {
     .blocks {
