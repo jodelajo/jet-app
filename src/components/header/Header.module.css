@@ -1,3 +1,4 @@
+
 .header {
   display: flex;
   position: relative;
@@ -5,7 +6,8 @@
   background: url("../../assets/slider_jet_pan.png") no-repeat right top fixed;
   width: 100%;
   height: auto;
-  min-height: 1000px;
+  background-size: contain;
+  min-height: 550px;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
@@ -15,37 +17,40 @@
 
 .banner {
   position: relative;
+  margin-bottom: 4rem;
   /* overflow: hidden; */
-  width: 1000px;
-  height: 400px;
+  width: 700px;
+  /* height: 300px; */
   animation-name: load;
   animation-timing-function: forwards;
   animation-duration: 2s;
-  
 }
 
 .animation {
-    position: absolute;
-    left: -1000px;
-    width: 1000px;
-    height: 400px;
-    -webkit-animation: slide 1s forwards;
-    animation: slide 1s forwards;
-    /* animation-timing-function: ease-in-out; */
+  position: absolute;
+  left: -700px;
+  width: 700px;
+  /* height: 300px; */
+  -webkit-animation: slide 1s forwards;
+  animation: slide 1s forwards;
+  /* animation-timing-function: ease-in-out; */
 }
 
+
 @-webkit-keyframes slide {
-    100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 
 @keyframes slide {
-    100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 
-
 h1 {
-  margin-top: 12rem;
-  margin-bottom: 8rem;
+  font-size: 4rem;
   font-weight: 500;
   color: #fff;
   text-align: end;
@@ -58,4 +63,24 @@ h1 {
 
 .punt {
   color: #fff;
+}
+
+@media only screen and (min-width: 2000px) {
+  .header {
+    min-height: 1000px;
+  }
+  .banner {
+    width: 1000px;
+    /* height: 400px; */
+  }
+
+  .animation {
+    left: -1000px;
+    width: 1000px;
+    /* height: 400px; */
+  }
+
+  .animation h1 {
+    font-size: 8rem;
+  }
 }
