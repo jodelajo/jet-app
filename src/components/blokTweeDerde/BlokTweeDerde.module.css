@@ -24,13 +24,13 @@
     justify-content: space-between;
     /* padding-bottom: 2rem; */
     width: 60%;
-    padding: 2rem 6rem;
-    background-color: var(--colors-dark);
-    color: var(--colors-gray);
+    padding: 2rem 6rem 4rem 6rem;
+    background-color: #DFE0DF;
+    color: var(--colors-dark);
 }
 
 
 .blocks1 h2 {
-    color: var(--colors-white);
+    color: var(--colors-dark);
 }
 

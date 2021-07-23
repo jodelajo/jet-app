@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
---colors-yellow: rgb(255, 195, 0);
-/* --colors-yellow: rgb(152, 0, 0); */
---colors-gray: rgb(242, 242, 242);
+/* --colors-yellow: rgb(255, 195, 0); */
+--colors-yellow: #FF5B00;
+--colors-gray: rgb(244, 244, 244);
 --colors-dark: #020202;
 --colors-white: #FFFFFF;
 }
@@ -13,9 +13,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   width: 100%;
 }
 
