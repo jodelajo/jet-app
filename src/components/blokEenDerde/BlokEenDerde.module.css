@@ -4,7 +4,7 @@
     justify-content: center;
     padding-bottom: 4.4rem;
     /* min-height: 26rem; */
-    width: 40%;
+    width: auto;
     background-color: var(--colors-white);
     display: flex;
     flex-direction: column;
@@ -33,4 +33,10 @@
     font-size: 3rem;
     font-family: "Roboto", sans-serif;
     padding: 1rem 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .blocks2 {
+        width: 40%;
+    }
 }

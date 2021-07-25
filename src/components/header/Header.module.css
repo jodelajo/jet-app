@@ -52,6 +52,11 @@ h1 {
   border-top-right-radius: 42px;
   padding: 10px 30px 10px 0;
 }
+@media only screen and (min-width: 576px) {
+  .header {
+    min-height: 500px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
 .header {
