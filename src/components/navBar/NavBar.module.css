@@ -8,7 +8,7 @@
   align-items: center;
   font-family: "Montserrat", sans-serif;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 
 .name,
