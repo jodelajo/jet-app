@@ -19,14 +19,14 @@
     box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5); */
     text-align: center;
     align-items: center;
-    padding: 3rem 8rem;
+    padding: 3rem 8rem 1rem 8rem;
    justify-content: center;
 }
 
 
 @media only screen and (min-width: 2000px) {
     .blocks {
-        padding-top: 10rem;
+        padding-top: 6rem;
         padding-bottom: 2rem;
     }
 

@@ -1,47 +1,100 @@
-.navBar{
-    /* background-color:  #626262; */
-    /* border-bottom: 1px solid rgb(216, 216, 216); */
-    background-color: var(--colors-dark);
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    position: fixed;
-    width: 100%;
+.navBar {
+  /* background-color:  #626262; */
+  /* border-bottom: 1px solid rgb(216, 216, 216); */
+  background-color: var(--colors-dark);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  width: 100%;
 }
 
-.name, .menu {
-    color: var(--colors-dark);
-    
+.name,
+.menu {
+  color: var(--colors-dark);
+  
 }
 
 .name {
-    text-align: left;
-    padding-left: 20px;
-    color: var(--colors-white);
-    font-weight: 600;
-    
+  text-align: left;
+  padding-left: 10px;
+  color: var(--colors-white);
+  font-weight: 600;
+  
 }
 .noot {
-    color: var(--colors-yellow);
+  color: var(--colors-yellow);
+}
+
+.hamburgerIcon {
+  color: var(--colors-white);
+  font-size: 2.2em;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  
+}
+
+#hamburger {
+  display: none;
+}
+
+.hamburger {
+  display: none;
 }
 
 .menu {
-    color: var(--colors-white);
-    text-align: end;
-    padding-right: 20px;
+  color: var(--colors-white);
+  text-align: end;
+  padding-right: 20px;
+  display: block;
+  top: 90px;
+  right: 0;
+  width: 200px;
+  position: absolute;
+}
+
+
+.menuWeb {
+  display: none;
 }
 
 .link {
-    color: var(--colors-white);
-    text-decoration: none;
-    padding: 6px 12px;
-    font-size: 1.2rem;
-    font-family: "Roboto", sans-serif;
+  color: var(--colors-dark);
+  background-color: var(--colors-white);
+  text-decoration: none;
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  display: block;
 }
 
 .active {
-    color: var(--colors-yellow);
+  color: var(--colors-yellow);
 }
 
+@media only screen and (min-width: 992px) {
+  .menuWeb {
+    color: var(--colors-white);
+    text-align: end;
+    padding-right: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link {
+      width: auto;
+  }
+  
+
+  .menu {
+      display: none;
+  }
+
+  .hamburgerIcon {
+      display: none;
+  }
+}
