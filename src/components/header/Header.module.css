@@ -2,11 +2,12 @@
   display: flex;
   position: relative;
   margin: 0;
-  background: url("../../assets/slider_note.png");
+  background: url("../../assets/slider_jet_note_mobile.png") no-repeat top center fixed;
+  background-position-y: 3.4rem;
   width: 100vw;
   height: auto;
   background-size: contain;
-  min-height: 300px;
+  min-height: 320px;
   z-index: -10;
 }
 
@@ -15,15 +16,15 @@
   animation-name: load;
   animation-timing-function: forwards;
   animation-duration: 2s;
-  margin-top: 8rem;
+  margin-top: 12rem;
   margin-bottom: 1rem;
-  width: 300px;
+  width: 220px;
 }
 
 .animation {
   position: absolute;
-  left: -300px;
-  width: 300px;
+  left: -220px;
+  width: 220px;
   -webkit-animation: slide 1s forwards;
   animation: slide 1s forwards;
 }
@@ -41,7 +42,7 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--colors-white);
   text-align: end;
@@ -49,13 +50,34 @@ h1 {
   /* min-width: 50%; */
   border-bottom-right-radius: 42px;
   border-top-right-radius: 42px;
-  padding: 10px 20px ;
+  padding: 10px 30px 10px 0;
+}
+
+@media only screen and (min-width: 768px) {
+.header {
+  min-height: 550px;
+}
+
+.banner {
+  width: 360px;
+  margin-top: 22rem;
+  margin-bottom: 2rem;
+}
+
+.animation {
+  left: -360px;
+  width: 360px;
+}
+
+h1 {
+  font-size: 2rem;
+}
 }
 
 @media only screen and (min-width: 992px){
 .header {
   background: url("../../assets/slider_jet_note.png") no-repeat right top fixed;
-  min-height: 550px;
+  min-height: 750px;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
@@ -64,7 +86,7 @@ h1 {
 }
 
 .banner {
- 
+  margin-top: 6rem;
   margin-bottom: 4rem;
   /* overflow: hidden; */
   width: 700px;
