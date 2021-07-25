@@ -10,7 +10,13 @@
 .drieblok {
     padding: 4rem 0 0 0;
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--colors-gray);
     align-items: stretch;
 }
 
+@media only screen and (min-width: 768px) {
+    .drieblok {
+flex-wrap: nowrap;
+    }
+}
