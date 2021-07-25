@@ -87,6 +87,8 @@
 
   .link {
       width: auto;
+      color: var(--colors-white);
+  background-color: var(--colors-dark);
   }
   
 
