@@ -1,7 +1,7 @@
 
 .blocks {
     /* min-height: 24rem; */
-    padding-top: 4rem;
+    padding-top: 1rem;
     /* padding-bottom: 2rem; */
     width: 100%;
     display: flex;
@@ -14,13 +14,24 @@
 
 .blocks1 {
     /* width: 70%; */
-    margin: 0 8rem;
+    margin: 0 2rem;
     /* background-color: white;
     box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5); */
     text-align: center;
     align-items: center;
-    padding: 3rem 8rem 1rem 8rem;
+    padding: 3rem 2rem 1rem 2rem;
    justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .blocks {
+        padding-top: 4rem;
+    }
+
+    .blocks1 {
+        margin: 0 8rem;
+        padding: 3rem 8rem 1rem 8rem;
+    }
 }
 
 

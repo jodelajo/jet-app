@@ -23,8 +23,8 @@
     align-items: stretch;
     justify-content: space-between;
     /* padding-bottom: 2rem; */
-    width: 60%;
-    padding: 2rem 6rem 4rem 6rem;
+    width: auto;
+    padding: 2rem 2rem 4rem 2rem;
     background-color: #DFE0DF;
     color: var(--colors-dark);
 }
@@ -34,3 +34,16 @@
     color: var(--colors-dark);
 }
 
+
+@media only screen and (min-width: 768px) {
+    .blocks1 {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .blocks1 {
+        width: 60%;
+        padding: 2rem 6rem 4rem 6rem;
+    }
+}

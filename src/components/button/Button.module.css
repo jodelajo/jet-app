@@ -1,14 +1,32 @@
 .button {
-    background-color: var(--colors-yellow);
-    margin: 3rem auto 1rem auto;
-    padding: 1rem;
-    border-radius: 32px;
-    width: 50%;
-    box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
+  background-color: var(--colors-yellow);
+  margin: 3rem auto 1rem auto;
+  padding: 1rem;
+  border-radius: 32px;
+  width: 86%;
+  box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
 }
 
 .link {
-    text-decoration: none;
-    color: var(--colors-white);
-    font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: var(--colors-white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .button {
+    border-radius: 32px;
+    width: 70%;
+  }
+
+  .link {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .button {
+    width: 50%;
+  }
 }

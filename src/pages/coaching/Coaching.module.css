@@ -7,9 +7,9 @@
 }
 
 .content {
-    margin: 6rem;
+    /* margin: 6rem; */
     padding: 4rem;
-    background-color: var(--colors-white);
+    /* background-color: var(--colors-white); */
 }
 
 .blok {
@@ -29,4 +29,12 @@
 }
 .noot {
     color: var(--colors-yellow);
+}
+
+@media only screen and (min-width: 992px) {
+    .content {
+        margin: 6rem;
+        padding: 4rem;
+        /* background-color: var(--colors-white); */
+    }
 }

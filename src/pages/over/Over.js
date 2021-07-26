@@ -45,7 +45,7 @@ function Over() {
       </div>
       <div className={styles.blok}>
         <BlokEenDerde
-          bgColor={["rgb(255, 195, 0)"]}
+          bgColor={["#FF5B00"]}
           from={"Van trainee Giannis: "}
           content={
             "“Mede door haar openheid, betrokkenheid en directheid zorgt Jet ervoor dat zij gemakkelijk en snel te vertrouwen is. Een combinatie die mensen om haar heen de kans geeft om zichzelf te zijn, bloot te geven en het uiterste uit haar training te halen.”"
