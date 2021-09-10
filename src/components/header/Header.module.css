@@ -127,7 +127,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    background-size: contain;
+    background-size: cover;
     background-color: var(--colors-gray);
     border-bottom: solid 25px var(--colors-yellow);
     /* border-bottom: 4px solid #ffc300; */
