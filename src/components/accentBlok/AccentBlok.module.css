@@ -1,0 +1,57 @@
+.blocks {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 4.4rem;
+    /* min-height: 26rem; */
+    color: var(--colors-white);
+    width: auto;
+    background-color: var(--colors-yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2 {
+    /* font-size: 2rem; */
+    font-weight: 300;
+
+}
+
+.circle {
+    padding: 2rem;
+    height: 400px;
+    width: 400px;
+   
+    background-color: var(--colors-white);
+   
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: var(--colors-dark);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .blocks {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .blocks {
+        width: 40%;
+    }
+
+    .quote {
+        padding-top: 1rem;
+    margin: 0 4rem;
+    }
+}

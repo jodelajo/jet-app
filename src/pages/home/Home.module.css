@@ -13,7 +13,37 @@
     flex-wrap: wrap;
     background-color: var(--colors-gray);
     align-items: stretch;
+    
 }
+
+.blokBreed {
+  background-image: url('../../assets/sun.png') repeat ;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 @media only screen and (min-width: 768px) {
     .drieblok {

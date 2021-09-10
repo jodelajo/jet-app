@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   margin: 0;
+  background-color: var(--colors-gray);
   background: url("../../assets/slider_jet_note_mobile.png") no-repeat top
     center fixed;
   background-position-y: 3.4rem;
@@ -21,6 +22,8 @@
   margin-bottom: 1rem;
   width: 220px;
 }
+
+
 
 .animation {
   position: absolute;
@@ -119,31 +122,39 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
   .header {
-    background: url("../../assets/slider_jet_note.png") no-repeat right top
-      fixed;
-    min-height: 550px;
+    background: url("../../assets/slider_jet_note.png") no-repeat right top;
+    height: 570px;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     background-size: contain;
+    background-color: var(--colors-gray);
     /* border-bottom: 4px solid #ffc300; */
   }
 
   .banner {
     margin-top: 0rem;
     margin-bottom: 6rem;
-    width: 700px;
+    width: 600px;
+    
+  }
+
+  h1 {
+    background-color: transparent;
+    color: var(--colors-yellow);
+    text-align: end;
   }
 
   .animation {
-    left: -700px;
-    width: 700px;
+    left: -600px;
+    width: 600px;
   }
 }
 
 @media only screen and (min-width: 2000px) {
   .header {
-    min-height: 1000px;
+    min-height: 1100px;
+    background-color: var(--colors-gray);
   }
   .banner {
     width: 1000px;
