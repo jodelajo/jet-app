@@ -4,13 +4,15 @@ import ScrollAnimation from "react-animate-on-scroll"
 import Button from "../button/Button";
 
 
+
 function BlokBreed({headerText, content, buttonLink, buttonText}) {
   return (
     <div className={styles.container}>
       <div className={styles.blocks}>
         <div className={styles.blocks1}>
           <ScrollAnimation animateIn="fadeIn" duration='2' delay='1'>
-            <div className={styles.bgImage}></div>
+            {/* <div className={styles.bgImage}></div> */}
+            
           <h2>{headerText}</h2>
           {content}
           <Button

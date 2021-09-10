@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   margin: 0;
-  background-color: var(--colors-gray);
+  background-color: var(--colors-green);
   background: url("../../assets/slider_jet_note_mobile.png") no-repeat top
     center fixed;
   background-position-y: 3.4rem;
@@ -10,7 +10,7 @@
   height: auto;
   background-size: contain;
   min-height: 320px;
-  z-index: -10;
+  z-index: -10; 
 }
 
 .banner {
@@ -29,8 +29,8 @@
   position: absolute;
   left: -220px;
   width: 220px;
-  -webkit-animation: slide 1s forwards;
-  animation: slide 1s forwards;
+  -webkit-animation: slide 1.5s forwards;
+  animation: slide 1.5s forwards;
 }
 
 @-webkit-keyframes slide {
@@ -123,12 +123,13 @@ h1 {
 @media only screen and (min-width: 1200px) {
   .header {
     background: url("../../assets/slider_jet_note.png") no-repeat right top;
-    height: 570px;
+    min-height: 586px;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     background-size: contain;
     background-color: var(--colors-gray);
+    border-bottom: solid 25px var(--colors-yellow);
     /* border-bottom: 4px solid #ffc300; */
   }
 
@@ -141,8 +142,8 @@ h1 {
 
   h1 {
     background-color: transparent;
-    color: var(--colors-yellow);
-    text-align: end;
+    color: var(--colors-accent);
+    text-align: start;
   }
 
   .animation {
@@ -153,8 +154,9 @@ h1 {
 
 @media only screen and (min-width: 2000px) {
   .header {
-    min-height: 1100px;
+    min-height: 1041px;
     background-color: var(--colors-gray);
+    
   }
   .banner {
     width: 1000px;

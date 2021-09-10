@@ -24,8 +24,8 @@
     justify-content: space-between;
     /* padding-bottom: 2rem; */
     width: auto;
-    padding: 2rem 2rem 4rem 2rem;
-    background-color: #DFE0DF;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: var(--colors-green);
     color: var(--colors-dark);
 }
 
@@ -44,6 +44,6 @@
 @media only screen and (min-width: 992px) {
     .blocks1 {
         width: 60%;
-        padding: 2rem 6rem 4rem 6rem;
+        padding: 4rem 6rem 4rem 6rem;
     }
 }

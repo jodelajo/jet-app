@@ -6,15 +6,21 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--colors-gray);
   
     /* background-size: 600px; */
    
-    align-items: stretch;
+    align-items: center;
     text-align: center;
 
 }
+.img {
+    width: 300px;
+    height: auto;
+    margin-top: -180px;
+}
+
 .bgImage {
     background-image: url("../../assets/sun-icon.svg");
     position: absolute;
@@ -57,20 +63,23 @@
 
 @media only screen and (min-width: 992px) {
     .blocks {
-        padding-top: 4rem;
+        padding-top: 0.5rem;
     }
 
     .blocks1 {
         margin: 0 8rem;
-        padding: 3rem 8rem 1rem 8rem;
+        padding: 1rem 8rem 1rem 8rem;
     }
 }
 
 
 @media only screen and (min-width: 2000px) {
     .blocks {
-        padding-top: 6rem;
+        /* padding-top: 1rem; */
         padding-bottom: 2rem;
+    }
+    .img{
+        margin-top: -240px;
     }
 
     .blocks1 {

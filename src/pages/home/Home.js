@@ -5,11 +5,14 @@ import BlokBreed from "../../components/blokBreed/BlokBreed";
 import BlokTweeDerde from "../../components/blokTweeDerde/BlokTweeDerde";
 import BlokEenDerde from "../../components/blokEenDerde/BlokEenDerde";
 import AccentBlok from "../../components/accentBlok/AccentBlok";
+import Logo from "../../components/Logo/Logo";
 
 export default function Home() {
+  
   return (
     <div className={styles.homeContainer}>
       <Header />
+      <Logo />
       <main className={styles.homeMain}>
         <div className={styles.blokBreed}>
           <BlokBreed
@@ -41,7 +44,7 @@ export default function Home() {
           <AccentBlok
             title={"Missie"}
             content={
-              "Mijn missie is om mijn medemensen te helpen zich te richten op de ontwikkeling van zichzelf en het leren respecteren van de ontwikkeling van zichzelf en van de ander. Leren om minder een oordeel te hebben over zichzelf en over elkaar. Dat mag op een speelse en humoristische manier maar ook met kwaliteit, dat mag licht zijn maar ook zwaar, dat mag op een creatieve wijze of weloverwogen."
+              "Mijn missie is om mijn medemensen te helpen zich te richten op de ontwikkeling van zichzelf en het leren respecteren van de ontwikkeling van zichzelf en van de ander. Leren om minder een oordeel te hebben over zichzelf en over elkaar."
             }
           />
         </div>

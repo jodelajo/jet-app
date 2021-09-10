@@ -9,6 +9,7 @@
   font-family: "Montserrat", sans-serif;
   position: fixed;
   width: 100vw;
+  z-index: 10;
 }
 
 .name,
@@ -25,7 +26,7 @@
   
 }
 .noot {
-  color: var(--colors-yellow);
+  color: var(--colors-accent);
 }
 
 .hamburgerIcon {

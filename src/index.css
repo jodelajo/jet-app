@@ -5,22 +5,30 @@
 
 :root {
 /* --colors-yellow: rgb(255, 195, 0); */
---colors-yellow: #FF5B00;
---colors-gray: rgb(244, 244, 244);
---colors-dark: #020202;
---colors-white: #FFFFFF;
+--colors-yellow: #274a54;
+--colors-gray: rgb(215, 230, 245);
+--colors-dark:  hsla(0, 0%, 14%, 1);
+--colors-white: hsla(60, 33%, 99%, 1);
+--colors-green: #7ebdc2;
+--colors-accent: #f7cc43;
 }
 
 
+/* --white: hsla(60, 33%, 99%, 1);
+--teal-blue: hsla(193, 22%, 40%, 1);
+--xanadu: hsla(83, 7%, 51%, 1);
+--alice-blue: hsla(212, 33%, 91%, 1);
+--eerie-black: hsla(0, 0%, 14%, 1); */
 
 
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-size: 1.2rem;
+  /* letter-spacing: 0.6px; */
   width: 100vw;
 }
 
