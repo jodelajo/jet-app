@@ -6,6 +6,7 @@ import BlokTweeDerde from "../../components/blokTweeDerde/BlokTweeDerde";
 import BlokEenDerde from "../../components/blokEenDerde/BlokEenDerde";
 import AccentBlok from "../../components/accentBlok/AccentBlok";
 import Logo from "../../components/Logo/Logo";
+import Footer from "../../components/footer/Footer";
 
 export default function Home() {
   
@@ -48,7 +49,6 @@ export default function Home() {
             }
           />
         </div>
-
         <BlokBreed
           headerText={"Coaching en Mediation"}
           content={
@@ -75,7 +75,9 @@ export default function Home() {
             buttonLink={"/over"}
           />
         </div>
+       
       </main>
+      <Footer/>
     </div>
   );
 }
