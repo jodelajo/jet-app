@@ -5,13 +5,17 @@
 
 :root {
 /* --colors-yellow: rgb(255, 195, 0); */
---colors-yellow: #274a54;
---colors-gray: rgb(215, 230, 245);
+/* --colors-yellow: #346978; */
+--colors-yellow: #cb2228;
+--colors-gray: rgb(227, 227, 227);
+--colors-soft: rgb(254, 253, 248);
 --colors-dark:  hsla(0, 0%, 14%, 1);
---colors-white: hsla(60, 33%, 99%, 1);
---colors-green: #7ebdc2;
---colors-accent: #f7cc43;
+--colors-white: rgb(255, 255, 255);
+--colors-green: #2b8e95;
+--colors-heading: #f7cc43;
+--colors-accent: rgb(72, 89, 44);
 }
+
 
 
 /* --white: hsla(60, 33%, 99%, 1);
@@ -41,6 +45,7 @@ h2 {
   /* font-family: "Lora", serif; */
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 576px) {

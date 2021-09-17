@@ -3,7 +3,7 @@
   margin: 3rem auto 1rem auto;
   padding: 1rem;
   border-radius: 32px;
-  width: 86%;
+  width: 100%;
   box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
 }
 
@@ -17,16 +17,16 @@
 @media only screen and (min-width: 992px) {
   .button {
     border-radius: 32px;
-    width: 70%;
+    /* width: 70%; */
   }
 
   .link {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .button {
-    width: 50%;
+    width: 40%;
   }
-}
+} */

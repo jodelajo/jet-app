@@ -6,6 +6,7 @@ import BlokTweeDerde from "../../components/blokTweeDerde/BlokTweeDerde";
 import BlokEenDerde from "../../components/blokEenDerde/BlokEenDerde";
 import AccentBlok from "../../components/accentBlok/AccentBlok";
 import Logo from "../../components/Logo/Logo";
+import CoachingBlok from "../../components/coachingBlok/CoachingBlok";
 import Footer from "../../components/footer/Footer";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <div className={styles.homeContainer}>
       <Header />
-      <Logo />
+     
       <main className={styles.homeMain}>
         <div className={styles.blokBreed}>
           <BlokBreed
@@ -22,11 +23,11 @@ export default function Home() {
               "Persoonlijkheden, belangen en ambities kunnen botsen. Hoe ga je daar constructief en integer mee om? Hoe los je een langdurig conflict op? Ik help je er graag bij. De samenwerking met partners in je veld kan schuren, knetteren en uit de hand lopen. Conflicten moeten opgelost worden."
             }
             buttonText={"Neem contact met mij op."}
-            buttonLink={"/contact"}
+            buttonLink={'/contact'}
           />
         </div>
 
-        <div className={styles.drieblok}>
+        {/* <div className={styles.drieblok}>
           <BlokTweeDerde
             title={"WerkWijze"}
             content={
@@ -35,29 +36,67 @@ export default function Home() {
             buttonText={"Meer over mijn werkwijze"}
             buttonLink={"/werkwijze"}
           />
-          {/* <BlokEenDerde
+          <BlokEenDerde
             bgColor={["#FFFFFF"]}
             from={"Van coachee David"}
             content={
               "“Als trainer Persoonlijk Leiderschap heeft Jet een onuitwisbare indruk op mij achtergelaten. Jet is een bijzonder warm mens die klaar staat voor anderen. De manier waarop zij iemand een spiegel kan voorhouden, leidt ertoe dat diegene nieuwe zaken over zichzelf te weten komt en het vertrouwen in zichzelf kan terugvinden. Ik beveel Jet dan ook van harte aan als trainer!”"
             }
-          /> */}
+          />
           <AccentBlok
             title={"Missie"}
             content={
               "Mijn missie is om mijn medemensen te helpen zich te richten op de ontwikkeling van zichzelf en het leren respecteren van de ontwikkeling van zichzelf en van de ander. Leren om minder een oordeel te hebben over zichzelf en over elkaar."
             }
           />
+        </div> */}
+        
+        <div className={styles.drieblok}>
+          {/* <BlokTweeDerde
+            title={"WerkWijze"}
+            content={
+              "Mijn werkwijze kenmerkt zich als warm, enthousiasmerend, interactief en to the point. Waarbij ik mijn vermogen tot zelfreflectie benut en 360° feedback toepas. Als het nodig is af en toe de randen op te zoeken om jouw/jullie potentieel optimaal te benutten doe ik dat. Ik ben pas tevreden als jij tevreden bent en we onze doelen bereikt hebben."
+            }
+            buttonText={"Meer over mijn werkwijze"}
+            buttonLink={"/werkwijze"}
+          /> */}
+           <AccentBlok
+            title={"Visie"}
+            content={
+              "Mijn visie is dat iedereen mag leven zoals hij/zij zelf wil, wanneer hij/zij respect heeft en houdt voor zichzelf en de ander en de samenwerking zoekt waar wenselijk."
+            }
+            bgColor={"blocksMissie"}
+          />
+          <BlokEenDerde
+            bgColor={'rgb(72, 89, 44, 0.1)'}
+            title={"Testimonial"}
+            from={"Van coachee David"}
+            content={
+              "“Als trainer Persoonlijk Leiderschap heeft Jet een onuitwisbare indruk op mij achtergelaten. Jet is een bijzonder warm mens die klaar staat voor anderen. De manier waarop zij iemand een spiegel kan voorhouden, leidt ertoe dat diegene nieuwe zaken over zichzelf te weten komt en het vertrouwen in zichzelf kan terugvinden. Ik beveel Jet dan ook van harte aan als trainer!”"
+            }
+          />
+          <AccentBlok
+            title={"Missie"}
+            content={
+              "Mijn missie is om mijn medemensen te helpen zich te richten op de ontwikkeling van zichzelf en het leren respecteren van de ontwikkeling van zichzelf en van de ander. Leren om minder een oordeel te hebben over zichzelf en over elkaar."
+            }
+            bgColor={"blocksVisie"}
+          />
         </div>
-        <BlokBreed
+        {/* <BlokBreed
           headerText={"Coaching en Mediation"}
           content={
             "Vrolijke Noo♪zaak biedt Personal en Professional Coaching en Mediation. Thema’s kunnen zijn: Conflictbemiddeling, ongepast gedrag, Relatie met collega’s, (bege)leider of leidinggevende."
           }
           buttonLink={"/coaching"}
           buttonText={"Meer over coaching en mediation"}
+        /> */}
+        <CoachingBlok 
+        headerText={"Coaching en Mediation"}
+        content={
+          "Vrolijke Noo♪zaak biedt Personal en Professional Coaching en Mediation. Thema’s kunnen zijn: "
+        }
         />
-
         <div className={styles.drieblok}>
           <BlokEenDerde
             bgColor={["#FFFFFF"]}

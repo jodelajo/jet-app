@@ -1,23 +1,25 @@
 import React from "react";
 import styles from "./BlokEenDerde.module.css";
-import ScrollAnimation from "react-animate-on-scroll"
+
+import OnlyBirds from '../../assets/only_birds.png'
 
 
 
-function BlokEenDerde( {bgColor, color, from, content}) {
+function BlokEenDerde( {bgColor, color, from, content, title}) {
   return (
    
-      <div className={styles.blocks2} style={{backgroundColor: bgColor, color: color}}>
-        
-        <ScrollAnimation animateIn="fadeIn" duration='2' delay='1'>
+    <div className={styles.blocks2}>
+           
 
+    <div className={styles.title}><h2>{title}</h2></div>
+        
         <div className={styles.test}>{from}</div>
         <br />
         <div className={styles.quote}>
           {content}
         </div>
-        <div className={styles.testBlock} style={{backgroundColor: bgColor, color: color}}>Testimonial</div>
-        </ScrollAnimation>
+        <img className={styles.image} src={OnlyBirds} alt="birds"/>
+
        
       </div>
      
