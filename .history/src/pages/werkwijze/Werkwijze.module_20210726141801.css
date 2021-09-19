@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    flex: 1;
+    background-color: var(--colors-gray);
+}
+
+.content {
+    padding: 4rem;
+}
+
+.blok {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+@media only screen and (min-width: 992px) {
+    .content {
+        margin: 6rem;
+    }
+}

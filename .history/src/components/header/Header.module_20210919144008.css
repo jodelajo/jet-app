@@ -1,0 +1,199 @@
+.header {
+  display: flex;
+  position: relative;
+  margin: 0;
+  background-color: var(--colors-green);
+  background: url("../../assets/slider_jet_note_mobile.png") no-repeat top
+    center fixed;
+  background-position-y: 3.4rem;
+  width: 100vw;
+  min-width: 100%;
+  height: auto;
+  flex-direction: column;
+  background-size: contain;
+  min-height: 320px;
+  z-index: 1; 
+  justify-content: center;
+}
+
+
+
+
+.logo {
+display: none;
+}
+
+.img {
+  width: 200px;
+  
+}
+
+
+.punt {
+  color: var(--colors-white);
+}
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--colors-heading);
+  /* margin-top: 60px; */
+  margin-left: 20px;
+  /* text-align: end; */
+  /* background-color: var(--colors-yellow); */
+  /* min-width: 50%; */
+  /* border-bottom-right-radius: 42px;
+  border-top-right-radius: 42px;
+  padding: 10px 30px 10px 0; */
+}
+@media only screen and (min-width: 576px) {
+  .header {
+    min-height: 500px;
+  }
+
+}
+
+@media only screen and (min-width: 767px) {
+  .header {
+    min-height: 550px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    margin-left: 30px;
+    }
+
+  .banner {
+
+    position: relative;
+    animation-name: load;
+    animation-timing-function: forwards;
+    animation-duration: 2s;
+
+    width: 460px;
+    margin-top: 16rem;
+    margin-bottom: 2rem;
+  }
+
+  .animation {
+    position: absolute;
+    left: -460px;
+    width: 460px;
+    -webkit-animation: slide 1.5s forwards;
+    animation: slide 1.5s forwards;
+    animation-delay: 1.5s;
+  }
+  
+
+  h1 {
+    font-size: 2rem;
+    /* margin-bottom: 30px; */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    min-height: 650px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: contain;
+  }
+
+
+
+
+  .banner {
+    /* margin-top: 0rem; */
+    margin-bottom: 200px;
+    width: 800px;
+  }
+
+  .animation {
+    left: -800px;
+    width: 800px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    /* color: var(--colors-white);
+    text-align: end;
+    background-color: var(--colors-yellow); */
+    /* min-width: 50%; */
+    /* border-bottom-right-radius: 42px;
+    border-top-right-radius: 42px;
+    padding: 20px 40px 20px 60px; */
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    background: url("../../assets/slider_jet_note.png") no-repeat right top;
+    min-height: 586px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: cover;
+    background-color: var(--colors-gray);
+    /* border-bottom: solid 8px var(--colors-yellow); */
+    /* border-bottom: 4px solid #ffc300; */
+  }
+
+  .banner {
+    /* margin-top: 0rem; */
+    /* margin-bottom: 6rem; */
+    width: 1000px;
+    
+  }
+
+  h1 {
+    background-color: transparent;
+    color: var(--colors-heading);
+    text-align: start;
+  }
+
+  .animation {
+    left: -1000px;
+    width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .header {
+    min-height: 1041px;
+    background-color: var(--colors-gray);
+    
+  }
+  .banner {
+    width: 2000px;
+    /* height: 400px; */
+  }
+
+  .animation {
+    left: -2000px;
+    width: 2000px;
+    /* height: 400px; */
+  }
+
+  .animation h1 {
+    font-size: 8rem;
+  }
+}

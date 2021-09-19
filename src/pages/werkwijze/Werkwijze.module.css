@@ -3,7 +3,8 @@
     flex-direction: column;
     padding: 0;
     flex: 1;
-    background-color: var(--colors-gray);
+    /* background: radial-gradient(circle, rgba(17, 118, 146,0.00948529411764708) 0%, rgba(17, 118, 146,0.2602612044817927) 100%); */
+    
 }
 
 .content {
