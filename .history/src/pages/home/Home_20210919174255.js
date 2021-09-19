@@ -129,7 +129,7 @@ export default function Home() {
             buttonLink={"/werkwijze"}
           />
         </div>
-        <div className={styles.blokBreed}>
+        <div className={styles.drieblok}>
         <CoachingBlok
           headerText={"Coaching en Mediation"}
           buttonText={"Meer over coaching."}

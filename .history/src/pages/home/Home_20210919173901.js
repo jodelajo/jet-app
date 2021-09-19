@@ -102,8 +102,39 @@ export default function Home() {
           />
         </div>
 
+        {/* <div className={styles.drieblok}>
+          <BlokTweeDerde
+            title={"WerkWijze"}
+            content={
+              "Mijn werkwijze kenmerkt zich als warm, enthousiasmerend, interactief en to the point. Waarbij ik mijn vermogen tot zelfreflectie benut en 360° feedback toepas. Als het nodig is af en toe de randen op te zoeken om jouw/jullie potentieel optimaal te benutten doe ik dat. Ik ben pas tevreden als jij tevreden bent en we onze doelen bereikt hebben."
+            }
+            buttonText={"Meer over mijn werkwijze"}
+            buttonLink={"/werkwijze"}
+          />
+          <BlokEenDerde
+            bgColor={["#FFFFFF"]}
+            from={"Van coachee David"}
+            content={
+              "“Als trainer Persoonlijk Leiderschap heeft Jet een onuitwisbare indruk op mij achtergelaten. Jet is een bijzonder warm mens die klaar staat voor anderen. De manier waarop zij iemand een spiegel kan voorhouden, leidt ertoe dat diegene nieuwe zaken over zichzelf te weten komt en het vertrouwen in zichzelf kan terugvinden. Ik beveel Jet dan ook van harte aan als trainer!”"
+            }
+          />
+          <AccentBlok
+            title={"Missie"}
+            content={
+              "Mijn missie is om mijn medemensen te helpen zich te richten op de ontwikkeling van zichzelf en het leren respecteren van de ontwikkeling van zichzelf en van de ander. Leren om minder een oordeel te hebben over zichzelf en over elkaar."
+            }
+          />
+        </div> */}
+
         <div className={styles.drieblok}>
-         
+          {/* <BlokTweeDerde
+            title={"WerkWijze"}
+            content={
+              "Mijn werkwijze kenmerkt zich als warm, enthousiasmerend, interactief en to the point. Waarbij ik mijn vermogen tot zelfreflectie benut en 360° feedback toepas. Als het nodig is af en toe de randen op te zoeken om jouw/jullie potentieel optimaal te benutten doe ik dat. Ik ben pas tevreden als jij tevreden bent en we onze doelen bereikt hebben."
+            }
+            buttonText={"Meer over mijn werkwijze"}
+            buttonLink={"/werkwijze"}
+          /> */}
           <AccentBlok
             title={"Visie"}
             content={
@@ -129,15 +160,13 @@ export default function Home() {
             buttonLink={"/werkwijze"}
           />
         </div>
-        <div className={styles.blokBreed}>
+        <div className={styles.drieblok}>
         <CoachingBlok
           headerText={"Coaching en Mediation"}
           buttonText={"Meer over coaching."}
           buttonLink={"/coaching"}
         />
-        </div>
        
-       <div className={styles.drieblok}>
           <BlokEenDerde
             title={"Testimonial"}
             from={"Van coachee David"}

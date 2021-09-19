@@ -129,15 +129,13 @@ export default function Home() {
             buttonLink={"/werkwijze"}
           />
         </div>
-        <div className={styles.blokBreed}>
+        <div className={styles.drieblok}>
         <CoachingBlok
           headerText={"Coaching en Mediation"}
           buttonText={"Meer over coaching."}
           buttonLink={"/coaching"}
         />
-        </div>
        
-       <div className={styles.drieblok}>
           <BlokEenDerde
             title={"Testimonial"}
             from={"Van coachee David"}

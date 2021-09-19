@@ -10,7 +10,7 @@
 .drieblok {
   padding: 4rem 0 0 0;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background-color: #fff;
   align-items: stretch;
 }
