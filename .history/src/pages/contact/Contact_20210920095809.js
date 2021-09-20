@@ -4,7 +4,6 @@ import AccentBlok from '../../components/accentBlok/AccentBlok';
 import SecondHeader from "../../components/secondHeader/SecondHeader";
 import BlokEenDerde from "../../components/blokEenDerde/BlokEenDerde";
 import emailjs from 'emailjs-com'
-import Button from '../../components/button/Button';
 
 function Contact() {
   const nameRef = useRef();
@@ -41,12 +40,12 @@ function Contact() {
       <SecondHeader title={"Contact"} />
       <div className={styles.content}>
       <h2>Contact</h2>
-      <form onSubmit={sendEmail} className={styles.form}>
+      <form onSubmit={sendEmail} className={styles["form"]}>
         <input
           type="text"
           name="name"
           placeholder="Uw naam"
-          className={styles.input}
+          className={styles["input"]}
           ref={nameRef}
           required
         />
@@ -54,7 +53,7 @@ function Contact() {
           type="text"
           name="subject"
           placeholder="Onderwerp"
-          className={styles.input}
+          className={styles["input"]}
           ref={subjectRef}
           required
         />
@@ -62,7 +61,7 @@ function Contact() {
           type="email"
           name="email"
           placeholder="Email-adres"
-          className={styles.input}
+          className={styles["input"]}
           ref={emailRef}
           required
         />
@@ -70,7 +69,7 @@ function Contact() {
         <textarea
           name="message"
           placeholder="Uw bericht"
-          className={styles.inputTextarea}
+          className={styles["input-textarea"]}
           rows="4"
           ref={messageRef}
           required
@@ -79,7 +78,7 @@ function Contact() {
         <input
           type="submit"
           value="Verzenden"
-          className={styles.submitSend}
+          className={styles["submit-send"]}
         />
         {succesMessage && <p>Uw bericht is succesvol verzonden!</p>}
       </form>

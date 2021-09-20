@@ -31,7 +31,7 @@
         color: var(--colors-white);
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-        width: 300px;
+        /* width: 100%; */
         box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
       
       

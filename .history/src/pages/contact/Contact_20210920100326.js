@@ -76,9 +76,9 @@ function Contact() {
           required
         />
 
-        <input
+        <Button
           type="submit"
-          value="Verzenden"
+          buttonText="Verzenden"
           className={styles.submitSend}
         />
         {succesMessage && <p>Uw bericht is succesvol verzonden!</p>}

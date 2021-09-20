@@ -76,7 +76,7 @@ function Contact() {
           required
         />
 
-        <input
+        <Button
           type="submit"
           value="Verzenden"
           className={styles.submitSend}

@@ -4,7 +4,6 @@ import AccentBlok from '../../components/accentBlok/AccentBlok';
 import SecondHeader from "../../components/secondHeader/SecondHeader";
 import BlokEenDerde from "../../components/blokEenDerde/BlokEenDerde";
 import emailjs from 'emailjs-com'
-import Button from '../../components/button/Button';
 
 function Contact() {
   const nameRef = useRef();
