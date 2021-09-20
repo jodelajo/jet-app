@@ -13,14 +13,13 @@
 .form {
   display: flex;
   flex-direction: column;
- 
+  font-family: "Roboto", sans-serif;
 }
 
 .input,
 .inputTextarea {
   margin-bottom: 20px;
   padding: 1rem;
-  font-family: "Roboto", sans-serif;
 }
 
 .submitSend {
