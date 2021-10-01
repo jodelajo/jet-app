@@ -1,0 +1,33 @@
+.button {
+  background-color: var(--colors-accent);
+  margin: 3rem auto 1rem auto;
+  padding: 1rem;
+  border-radius: 32px;
+  width: 100%;
+  box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--colors-white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .button {
+    border-radius: 32px;
+    /* width: 70%; */
+  }
+
+  .link {
+    font-size: 1.2rem;
+  }
+}
+
+/* @media only screen and (min-width: 1200px) {
+  .button {
+    width: 40%;
+  }
+} */

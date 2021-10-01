@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Open+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&display=swap');
+
+:root {
+/* --colors-yellow: rgb(255, 195, 0); */
+/* --colors-yellow: #346978; */
+--colors-yellow: #cb2228;
+--colors-gray: rgb(227, 227, 227);
+--colors-soft: rgb(254, 253, 248);
+--colors-dark:  hsla(0, 0%, 14%, 1);
+--colors-white: rgb(255, 255, 255);
+--colors-green: #2b8e95;
+--colors-heading: #f7cc43;
+/* --colors-accent: rgb(72, 89, 44); */
+--colors-accent: rgb(61, 114, 128);
+}
+
+
+
+/* --white: hsla(60, 33%, 99%, 1);
+--teal-blue: hsla(193, 22%, 40%, 1);
+--xanadu: hsla(83, 7%, 51%, 1);
+--alice-blue: hsla(212, 33%, 91%, 1);
+--eerie-black: hsla(0, 0%, 14%, 1); */
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  /* letter-spacing: 0.6px; */
+  width: 100vw;
+}
+
+h1{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  /* font-family: "Lora", serif; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 786px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+}

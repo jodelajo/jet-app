@@ -1,0 +1,7 @@
+.footer {
+  height: 260px;
+  padding-top: 200px;
+  background-color: var(--colors-dark);
+  display: flex;
+ justify-content: flex-end;
+}
