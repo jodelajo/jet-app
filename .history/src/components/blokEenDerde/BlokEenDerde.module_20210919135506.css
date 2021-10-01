@@ -1,0 +1,96 @@
+.blocks2Giannis,
+.blocks2David, .blocks2Mieke, .blocks2Yellow  {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
+
+  flex-wrap: wrap;
+}
+.blocks2David {
+  background: radial-gradient(
+    circle,
+    rgba(17, 118, 146, 0.00948529411764708) 0%,
+    rgba(17, 118, 146, 0.1602612044817927) 100%
+  );
+}
+
+.blocks2Yellow {
+
+}
+
+.blocks2Mieke {
+    background: radial-gradient(circle, rgba(247,204,67,0.5060399159663865) 0%, rgba(247,204,67,1) 100%);
+
+}
+.blocks2Giannis {
+  background: radial-gradient(
+    circle,
+    rgba(17, 118, 146, 0.00948529411764708) 0%,
+    rgba(17, 118, 146, 0.1602612044817927) 100%
+  );
+}
+
+.title h2 {
+  /* font-size: 2rem; */
+  font-weight: 300;
+  color: var(--colors-dark);
+  margin: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.test {
+  font-family: "Roboto", sans-serif;
+  margin-top: 1rem;
+  font-weight: 700;
+  /* margin: 5rem 2rem 0 2rem; */
+}
+.quote {
+  margin: 0 2rem;
+  /* font-family: "Montserrat", sans-serif; */
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.testBlock {
+  color: var(--colors-dark);
+}
+
+.image {
+  width: 180px;
+}
+
+@media only screen and (min-width: 768px) {
+ 
+}
+
+@media only screen and (min-width: 992px) {
+    .blocks2Giannis,
+    .blocks2David, .blocks2Yellow, .blocks2Mieke {
+    flex-wrap: nowrap;
+    min-width: 34%;
+    max-width: 34%;
+  }
+
+  .quote {
+    /* padding-top: 1rem; */
+    margin: 0 4rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+ 
+  .quote {
+    margin: 2rem 8rem;
+  }
+  .image {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}

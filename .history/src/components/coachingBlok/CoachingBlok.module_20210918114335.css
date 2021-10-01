@@ -1,0 +1,141 @@
+.container {
+padding-top: 3rem;
+
+}
+
+.blocks {
+    /* min-height: 24rem; */
+   
+    /* padding-bottom: 2rem; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+
+    /* background-size: 600px; */
+   
+    align-items: center;
+    text-align: center;
+   
+
+}
+
+h2 {
+margin: 6rem 0 4rem 0;
+}
+
+.list {
+    display: flex;
+    text-align: start;
+}
+.list li  {
+    list-style-type: none;
+}
+/* .img {
+    width: 300px;
+    height: auto;
+    margin-top: -180px;
+} */
+.image {
+    display: block;
+    width: 60px;
+    margin-left: auto;
+    padding-left: 180px;
+    margin-right: auto;
+    z-index: 10;
+}
+
+.button {
+    margin-top: -56px;
+    min-width: 300px;
+    /* padding-top: -200px;; */
+}
+/* 
+.bgImage {
+    background-image: url("../../assets/sun-icon.svg");
+    position: absolute;
+    background-position-x: center;
+    background-position-y: center;
+    
+    /* align-self: center; */
+    /* top: 50%;
+    left: 50%; */
+    /* background-repeat: no-repeat;
+   
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%; */
+    /* background-size: 50%; */
+    /* opacity: 0.2; */
+    /* z-index: -1; */
+    /* -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite; */
+/* } */
+/* @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
+ /* */ 
+
+.blocks1 {
+    /* width: 70%; */
+    margin: 0 2rem;
+    background-image: url('../../assets/only_nootjes.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 4rem;
+  /* background-color: rgba(255, 247, 247, 0.729); */
+    /* box-shadow: 3px 3px 5px rgb(179, 179, 179, 0.5); */
+    text-align: start;
+    align-items: center;
+    padding: 3rem 2rem 1rem 2rem;
+   justify-content: center;
+   display: flex;
+   border-radius: 8px;
+   flex-direction: column;
+  
+}
+
+@media only screen and (min-width: 992px) {
+    .blocks {
+        padding-top: 0.5rem;
+    }
+    .image {
+        display: block;
+        width: 100px;
+        margin-left: 70px;
+       
+        
+    }
+    .button {
+        margin-top: -62px;
+        /* padding-top: -200px;; */
+    }
+    .blocks1 {
+        margin: 0 8rem;
+        padding: 1rem 8rem 1rem 8rem;
+        background-size: 8rem;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    /* .blocks {
+        /* padding-top: 1rem; */
+        /* padding-bottom: 2rem; */
+    /* } */ 
+    /* .img{
+        margin-top: -240px;
+    } */
+    .image {
+        margin-left: 200px;
+    }
+    .blocks1 {
+        margin: 0 30rem;
+        padding: 3rem 18rem 8rem 18rem;
+    }
+}
+

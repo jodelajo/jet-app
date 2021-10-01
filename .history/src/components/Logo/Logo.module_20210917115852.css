@@ -1,0 +1,31 @@
+.logo {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: transparent;
+   
+}
+
+.img {
+    background-color: transparent;
+    margin-top: -160px;
+    width: 360px;
+    height: auto;
+    animation-name: logo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(.2);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

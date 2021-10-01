@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    height: 400px;
+    background: url("../../assets/slider_note.png") no-repeat right top fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h2 {
+    margin-top: 300px;
+    color: var(--colors-heading);
+    /* background-color: var(--colors-dark); */
+    /* font-family: "Lora", serif; */
+    /* font-weight: 700; */
+}
+
+.logo {
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image {
+    width: 250px;
+}
+
+@media only screen and (min-width: 1600px) {
+.header h2 {
+    margin-top: 250px;
+}
+}
