@@ -42,7 +42,7 @@
 .blok {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 @media only screen and (min-width: 1200px) {

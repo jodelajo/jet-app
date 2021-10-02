@@ -1,11 +1,16 @@
 {
   "name": "jet-app",
   "version": "0.1.0",
+  "proxy": "http://localhost:3000",
   "private": true,
   "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^2.19.0",
+    "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "animate.css": "^4.1.1",
     "emailjs-com": "^3.2.0",
     "react": "^17.0.2",
     "react-animation-on-scroll": "^2.1.0",

@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const [checked, setChecked] = useState(false);
+  console.log('checked', checked);
 
   function handleClick() {
     setChecked(!checked);
@@ -29,7 +30,7 @@ export default function NavBar() {
         }}
       />
       {checked && (
-        <div className={styles.menu}>
+        <div className={styles.menuMobile}>
           <NavLink
             exact
             to="/"
@@ -38,6 +39,14 @@ export default function NavBar() {
             onClick={handleClick}
           >
             Home
+          </NavLink>
+          <NavLink
+            to="/nieuws"
+            className={styles.link}
+            activeClassName={styles.active}
+            onClick={handleClick}
+          >
+            Nieuws
           </NavLink>
           <NavLink
             to="/coaching"
@@ -83,6 +92,13 @@ export default function NavBar() {
             activeClassName={styles.active}
           >
             Home
+          </NavLink>
+          <NavLink
+            to="/nieuws"
+            className={styles.link}
+            activeClassName={styles.active}
+          >
+            Nieuws
           </NavLink>
           <NavLink
             to="/coaching"
