@@ -33,8 +33,8 @@
 }
 
 .titleBlock {
-    height: 90px;
-    max-height: 90px;
+    height: 80px;
+    max-height: 80px;
     background-color: var(--colors-dark);
 }
 
@@ -96,9 +96,15 @@
     .post {
         width: 30%;
     }
+    .mainImage {
+        height: 300px;
+    }
 }
 @media only screen and (min-width: 1600px) {
-
+    .titleBlock {
+        height: 90px;
+        max-height: 90px;
+    }
    
     .mainImage {
         height: 400px;
