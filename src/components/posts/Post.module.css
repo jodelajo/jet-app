@@ -1,15 +1,23 @@
+.container{
+   
+    
+}
+
 .container h2 {
     margin-top: 0;
+    /* width: 100%; */
+    text-align: center;
 }
 
 .allPosts {
     display: flex;
-    padding: 30px;
     align-items: stretch;
     justify-content: center;
    
     flex-wrap: wrap;
     gap: 20px;
+    padding: 30px;
+    
    
 }
 
@@ -25,10 +33,15 @@
 
 .post {
     background-color: var(--colors-accent);
+    width: 30%;
+    
+}
+.post h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .mainImage {
-  
-   width: 400px;
-   height: 300px;
+   width: 100%;
+   height: auto;
 }

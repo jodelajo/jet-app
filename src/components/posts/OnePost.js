@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import styles from './Post.module.css'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -34,7 +35,7 @@ export default function OnePost() {
   if (!postData) return <div>Loading...</div>;
 
   return (
-    <div >
+    <div className={styles.container}>
       <div >
         <div >
           <div >
@@ -59,7 +60,7 @@ export default function OnePost() {
             
             src={urlFor(postData.mainImage).url()}
             alt=""
-            style={{ height: "400px" }}
+            
           />
         </div>
         <div >

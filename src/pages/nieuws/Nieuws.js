@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Nieuws.module.css";
 import SecondHeader from "../../components/secondHeader/SecondHeader";
 import BlokEenDerde from "../../components/blokEenDerde/BlokEenDerde";
-
 import AccentBlok from "../../components/accentBlok/AccentBlok";
 import AllPosts from "../../components/posts/AllPosts";
 
