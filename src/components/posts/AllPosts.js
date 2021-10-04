@@ -42,10 +42,11 @@ export default function AllPosts() {
                     src={post.mainImage.asset.url}
                     alt=""
                   />
-
+                    <div className={styles.titleBlock}>
                     <h2>
                       {post.title}
                     </h2>
+                    </div>
               </Link>
               </div>
             ))}

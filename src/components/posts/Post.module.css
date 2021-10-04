@@ -1,6 +1,6 @@
 .container{
-   
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .container h2 {
@@ -13,16 +13,12 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-   
     flex-wrap: wrap;
     gap: 20px;
     padding: 30px;
-    
-   
 }
 
 .allPosts h2 {
-    padding-top: 20px;
     text-align: center;
     color: white;
    
@@ -33,15 +29,79 @@
 
 .post {
     background-color: var(--colors-accent);
-    width: 30%;
-    
+    width: 46%;
 }
-.post h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+
+.titleBlock {
+    height: 90px;
+    max-height: 90px;
+    background-color: var(--colors-accent);
 }
+
+.titleBlock h2 {
+    padding: 1.4rem 0;
+    font-size: 1.6rem;
+    font-family:  "Roboto", sans-serif;
+}
+
+
 
 .mainImage {
    width: 100%;
-   height: auto;
+   overflow: hidden;
+   height: 250px;
+   /* height: auto; */
+   
+}
+
+.onePostContainer {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.onePostImage {
+    
+    width: 100%;
+    min-width: 100vw;
+    height: auto;
+    overflow: hidden;
+  
+}
+
+.imageBox {
+    height: 400px;
+    background-color: violet;
+    overflow: hidden;
+}
+
+.authorImage{
+    max-width: 40px;
+    max-height: 40px;
+}
+/* 
+ */
+.meta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.content {
+    width: 80%;
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .post {
+        width: 30%;
+    }
+    .mainImage {
+        height: 400px;
+    }
+    /* .onePostImage {
+        height: 600px;
+    } */
 }
