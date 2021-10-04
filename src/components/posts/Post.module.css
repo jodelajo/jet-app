@@ -72,7 +72,7 @@
 
 .imageBox {
     height: 400px;
-    background-color: violet;
+  
     overflow: hidden;
 }
 
@@ -92,12 +92,14 @@
 .content {
     width: 80%;
 }
-
-@media only screen and (min-width: 1600px) {
-
+@media only screen and (min-width: 1400px) {
     .post {
         width: 30%;
     }
+}
+@media only screen and (min-width: 1600px) {
+
+   
     .mainImage {
         height: 400px;
     }
