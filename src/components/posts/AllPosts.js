@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from '../../client';
+import styles from './Post.module.css';
 
 export default function AllPosts() {
   const [allPostsData, setAllPosts] = useState(null);
@@ -28,22 +29,20 @@ export default function AllPosts() {
   }, []);
 
   return (
-    <div >
-      <div className="allPosts">
-        <h2 >Blog Posts</h2>
-        <h3 >
-          Welcome to my blog posts page!
-        </h3>
-        <div >
+    <div>
+      <div className={styles.container}>
+        <h2 >Nieuws</h2>
+        <div className={styles.allPosts}>
           {allPostsData &&
             allPostsData.map((post, index) => (
+              <div className={styles.post}>
               <Link to={"/nieuws/" + post.slug.current} key={post.slug.current}>
                 <span
                   
                   key={index}
                 >
                   <img
-                    
+                    className={styles.mainImage} 
                     src={post.mainImage.asset.url}
                     alt=""
                   />
@@ -58,6 +57,7 @@ export default function AllPosts() {
                   </span>
                 </span>
               </Link>
+              </div>
             ))}
         </div>
       </div>

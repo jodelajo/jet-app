@@ -1,0 +1,34 @@
+.container h2 {
+    margin-top: 0;
+}
+
+.allPosts {
+    display: flex;
+    padding: 30px;
+    align-items: stretch;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+
+.allPosts h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+   
+}
+.allPosts  a {
+    text-decoration: none;
+}
+
+.post {
+    background-color: var(--colors-accent);
+}
+
+.mainImage {
+  
+   width: 400px;
+   height: 300px;
+}
