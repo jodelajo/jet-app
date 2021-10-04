@@ -45,9 +45,14 @@ export default function OnePost() {
           src={urlFor(postData.mainImage).url()}
           alt=""
         />
-        </div>
+        <div>
         <h2>{postData.title}</h2>
+        </div>
+  
+        </div>
+      
         <div className={styles.meta}>
+          <span>Geschreven door: </span>
           <img
             src={urlFor(postData.authorImage).url()}
             className={styles.authorImage}

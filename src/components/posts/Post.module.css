@@ -15,7 +15,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .allPosts h2 {
@@ -29,7 +29,7 @@
 
 .post {
     background-color: var(--colors-dark);
-    width: 46%;
+    width: 90%;
 }
 
 .titleBlock {
@@ -71,17 +71,31 @@
 }
 
 .imageBox {
+    position: relative;
     height: 400px;
-  
+  display: flex;
+  flex-direction: column;
     overflow: hidden;
 }
 
-.authorImage{
-    max-width: 40px;
-    max-height: 40px;
+.imageBox h2 {
+    background-color: var(--colors-dark);
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--colors-white);
+    font-size: 4rem;
+   
+    text-transform: uppercase;
 }
-/* 
- */
+
+.authorImage{
+    max-width: 30px;
+    max-height: 30px;
+}
+
 .meta {
     display: flex;
     justify-content: flex-start;
@@ -91,6 +105,17 @@
 
 .content {
     width: 80%;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .allPosts {
+        padding: 20px;
+    }
+    .post {
+        width: 46%;
+    }
 }
 @media only screen and (min-width: 1400px) {
     .post {
@@ -108,6 +133,10 @@
    
     .mainImage {
         height: 400px;
+    }
+
+    .imageBox {
+        height: 600px;
     }
     /* .onePostImage {
         height: 600px;

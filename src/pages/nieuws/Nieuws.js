@@ -8,7 +8,7 @@ import AllPosts from "../../components/posts/AllPosts";
 function Nieuws() {
   return (
     <div className={styles.container}>
-      <SecondHeader title={"Personal en Professional Coaching en Mediation"} />
+      <SecondHeader title={"Nieuws"} />
       <div className={styles.content}>
        <AllPosts />
       </div>
