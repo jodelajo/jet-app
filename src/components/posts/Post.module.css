@@ -28,14 +28,14 @@
 }
 
 .post {
-    background-color: var(--colors-accent);
+    background-color: var(--colors-dark);
     width: 46%;
 }
 
 .titleBlock {
     height: 90px;
     max-height: 90px;
-    background-color: var(--colors-accent);
+    background-color: var(--colors-dark);
 }
 
 .titleBlock h2 {
