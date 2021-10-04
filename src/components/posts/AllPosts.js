@@ -29,9 +29,9 @@ export default function AllPosts() {
   }, []);
 
   return (
-    <div>
+    <div id="row" >
       <div className={styles.container}>
-        <h2 >Nieuws</h2>
+       
         <div className={styles.allPosts}>
           {allPostsData &&
             allPostsData.map((post, index) => (

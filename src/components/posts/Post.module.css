@@ -25,20 +25,23 @@
 }
 .allPosts  a {
     text-decoration: none;
+    height: 0;
+  
 }
 
 .post {
-    background-color: var(--colors-dark);
     width: 90%;
+    background-color:  hsla(0, 0%, 14%, 0.4);
 }
 
-.titleBlock {
+/* .titleBlock {
     height: 80px;
     max-height: 80px;
-    background-color: var(--colors-dark);
-}
+    
+} */
 
 .titleBlock h2 {
+    margin: 0;
     padding: 1.4rem 0;
     font-size: 1.6rem;
     font-family:  "Roboto", sans-serif;
@@ -76,18 +79,19 @@
   display: flex;
   flex-direction: column;
     overflow: hidden;
+    
 }
 
 .imageBox h2 {
-    background-color: var(--colors-dark);
+    /* background-color: var(--colors-dark); */
     padding: 20px;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: var(--colors-white);
+    color: var(--colors-heading);
     font-size: 4rem;
-   
+    background-color:  var(--colors-dark80);
     text-transform: uppercase;
 }
 
@@ -117,12 +121,12 @@
         width: 46%;
     }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
     .post {
         width: 30%;
     }
     .mainImage {
-        height: 250px;
+        height: 260px;
     }
 }
 @media only screen and (min-width: 1600px) {

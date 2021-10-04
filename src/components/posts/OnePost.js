@@ -61,7 +61,7 @@ export default function OnePost() {
           <h4>{postData.name}</h4>
         </div>
     
-      <div className={styles.content}>
+      <div id="row" className={styles.content}>
         <BlockContent
           blocks={postData.body}
           projectId={sanityClient.clientConfig.projectId}

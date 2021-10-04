@@ -10,6 +10,7 @@
 --colors-gray: rgb(227, 227, 227);
 --colors-soft: rgb(254, 253, 248);
 --colors-dark:  hsla(0, 0%, 14%, 1);
+--colors-dark80:  hsla(0, 0%, 14%, 0.8);
 --colors-white: rgb(255, 255, 255);
 --colors-green: #2b8e95;
 --colors-heading: #f7cc43;
@@ -47,6 +48,19 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 300;
+}
+
+#row {
+  animation: fadeIn 2s ease-in-out 0s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 576px) {
