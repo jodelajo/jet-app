@@ -20,6 +20,7 @@
     
     margin-right: auto;
     margin-left: auto;
+    z-index: 1;
 }
 
 .image {
@@ -29,6 +30,7 @@
     animation-duration: 1.5s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
+    
 }
 @keyframes logo {
     0% {

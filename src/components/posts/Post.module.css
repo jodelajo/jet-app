@@ -10,6 +10,7 @@
 }
 
 .allPosts {
+    padding-top: 30px;;
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -125,11 +126,15 @@
     .post {
         width: 30%;
     }
-    .mainImage {
+    /* .mainImage {
         height: 260px;
-    }
+    } */
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1800px) {
+    .post {
+        min-height: 450px;
+    }
+
     .titleBlock {
         height: 90px;
         max-height: 90px;
@@ -139,10 +144,5 @@
         height: 400px;
     }
 
-    .imageBox {
-        height: 600px;
-    }
-    /* .onePostImage {
-        height: 600px;
-    } */
+
 }
