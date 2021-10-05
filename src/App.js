@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import { Route, Switch } from "react-router-dom";
-
+import PrivateRoute from './constants/PrivateRoute';
 import NavBar from './components/navBar/NavBar';
 import Home from './pages/home/Home';
 import Nieuws from './pages/nieuws/Nieuws';
@@ -26,6 +26,7 @@ function App() {
       <Route exact path="/contact" component={Contact} />
       <Route  exact path="/nieuws" component={Nieuws} />
       <Route exact path="/nieuws/:slug" component={OnePost}  />
+      <PrivateRoute exact path="/jet-admin" render={() => (window.location = "https://jetblog.sanity.studio/desk")}  />
       </Switch>
      <Footer/>
     </div>
