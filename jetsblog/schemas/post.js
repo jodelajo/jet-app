@@ -46,6 +46,7 @@ export default {
     {
       name: 'publishedAt',
       title: 'Published at',
+      description: 'test',
       type: 'datetime',
     },
     {

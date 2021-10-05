@@ -25,7 +25,7 @@ export default function OnePost() {
         `*[slug.current == "${slug}"][0]{
           title,
           id,
-          _id,
+         
           slug,
           publishedAt,
           mainImage,

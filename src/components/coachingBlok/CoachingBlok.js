@@ -1,7 +1,6 @@
 import React from "react";
 
 import styles from "./CoachingBlok.module.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import Button from "../button/Button";
 import rightBird from '../../assets/rightBird.png'
@@ -13,7 +12,6 @@ function CoachingBlok({headerText, content, buttonLink, buttonText}) {
   
   return (
     <div className={styles.container}>
-       <AnimationOnScroll animateIn="animate__fadeIn" delay={1} duration={3}>      
 
       <div className={styles.blocks}>
         <div className={styles.blocks1}>
@@ -42,7 +40,6 @@ function CoachingBlok({headerText, content, buttonLink, buttonText}) {
          
         </div>
       </div>
-      </AnimationOnScroll>
     </div>
   );
 }

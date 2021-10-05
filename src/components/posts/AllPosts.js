@@ -14,8 +14,9 @@ export default function AllPosts() {
       .fetch(
         `*[_type == "post"]{
           title,
+          
+          id,
           slug,
-          _id,
           category,
           mainImage{
             asset->{

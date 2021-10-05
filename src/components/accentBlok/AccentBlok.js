@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./AccentBlok.module.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import {Link} from 'react-router-dom'
 
 
@@ -10,7 +10,7 @@ function AccentBlok( {bgColor, color, title, content, buttonText, buttonLink}) {
   return (
    
       <div className={styles[bgColor]}>
-            <AnimationOnScroll animateIn="animate__fadeIn" delay={1} duration={3}>
+           
 
            <div className={styles.title}><h2>{title}</h2></div>
        
@@ -22,7 +22,7 @@ function AccentBlok( {bgColor, color, title, content, buttonText, buttonLink}) {
            
         </div>
          
-        </AnimationOnScroll>
+        
         </div>
   );
      
