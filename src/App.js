@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import { Route, Switch } from "react-router-dom";
-import PrivateRoute from './constants/PrivateRoute';
+
 import NavBar from './components/navBar/NavBar';
 import Home from './pages/home/Home';
 import Nieuws from './pages/nieuws/Nieuws';
