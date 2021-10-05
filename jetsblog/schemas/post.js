@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'post',
   title: 'Post',
@@ -7,6 +6,7 @@ export default {
     {
       name: 'title',
       title: 'Title',
+      description: 'Keep it short',
       type: 'string',
     },
     {

@@ -22,10 +22,10 @@ export default function OnePost() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[slug.current == "${slug}"][0]{
+        `*[slug.current == "${slug}"]{
           title,
           id,
-         
+          _id,
           slug,
           publishedAt,
           mainImage,
@@ -34,7 +34,7 @@ export default function OnePost() {
          "authorImage": author->image,
           }`
       )
-      .then((data) => setPostData(data))
+      .then((data) => setPostData(data[0]))
       .catch(console.error);
 
   }, [slug]);
