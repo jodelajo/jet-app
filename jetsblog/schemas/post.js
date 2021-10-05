@@ -11,7 +11,7 @@ export default {
     },
     {
       name: 'id',
-      title: 'Id',
+      title: 'ID',
       type: 'number',
     },
     {

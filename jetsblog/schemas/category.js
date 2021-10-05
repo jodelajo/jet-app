@@ -6,6 +6,7 @@ export default {
     {
       name: 'title',
       title: 'Title',
+      description: 'This is the title',
       type: 'string',
     },
     {
