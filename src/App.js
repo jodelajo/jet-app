@@ -26,7 +26,7 @@ function App() {
       <Route exact path="/contact" component={Contact} />
       <Route  exact path="/nieuws" component={Nieuws} />
       <Route exact path="/nieuws/:slug" component={OnePost}  />
-      <PrivateRoute exact path="/jet-admin" render={() => (window.location = "https://jetblog.sanity.studio/desk")}  />
+      <Route exact path="/jet-admin" render={() => (window.location = "https://jetblog.sanity.studio/desk")}  />
       </Switch>
      <Footer/>
     </div>
