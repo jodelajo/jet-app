@@ -6,7 +6,9 @@ import Logo from '../Logo/Logo'
 
 export default function Footer() {
     return ( <div className={styles.footer}>
-       <Logo/>
+       <Logo 
+       link='https://jetblog.sanity.studio/desk'
+       />
     </div>
 
     )
