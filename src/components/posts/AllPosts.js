@@ -15,6 +15,7 @@ export default function AllPosts() {
         `*[_type == "post"]{
           title,
           slug,
+          _id,
           category,
           mainImage{
             asset->{

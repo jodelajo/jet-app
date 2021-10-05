@@ -62,15 +62,20 @@
 }
 .onePostImage {
   width: 100%;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   height: auto;
   overflow: hidden;
 }
 
 .imageBox {
   position: relative;
+  width: 100%;
+  background-image: url("../../assets/slider_note.png");
+  background-color: var(--colors-dark80);
   height: 400px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   overflow: hidden;
 }
@@ -79,7 +84,7 @@
   /* background-color: var(--colors-dark); */
   padding: 20px;
   position: absolute;
-  top: 30%;
+  top: 36%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--colors-heading);
@@ -113,6 +118,17 @@
   }
 }
 @media only screen and (min-width: 1440px) {
+.content {
+    width: 60%;
+}
+.imageBox {
+    height: 500px;
+    padding: 60px 0;
+}
+    .onePostImage {
+        
+        width: 50%;
+    }
   .post {
     width: 30%;
   }

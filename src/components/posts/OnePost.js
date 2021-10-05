@@ -7,6 +7,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import styles from "./Post.module.css";
 
+
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -21,18 +22,21 @@ export default function OnePost() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[slug.current == "${slug}"]{
+        `*[slug.current == "${slug}"][0]{
           title,
+          id,
           _id,
           slug,
+          publishedAt,
           mainImage,
          body,
          "name": author->name,
          "authorImage": author->image,
           }`
       )
-      .then((data) => setPostData(data[0]))
+      .then((data) => setPostData(data))
       .catch(console.error);
+
   }, [slug]);
 
   if (!postData) return <div>Loading...</div>;
@@ -43,7 +47,7 @@ export default function OnePost() {
         <img
           className={styles.onePostImage}
           src={urlFor(postData.mainImage).url()}
-          alt=""
+          alt="Main"
         />
         <div>
         <h2>{postData.title}</h2>
@@ -60,6 +64,7 @@ export default function OnePost() {
           />
           <h4>{postData.name}</h4>
         </div>
+        <div>{postData.publishedAt}</div>
     
       <div id="row" className={styles.content}>
         <BlockContent

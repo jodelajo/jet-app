@@ -1,3 +1,5 @@
+/* eslint-disable import/no-anonymous-default-export */
+
 /**
  * This is the schema definition for the rich text fields used for
  * for this blog studio. When you import it in schemas.js it can be
@@ -39,6 +41,22 @@ export default {
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
+          {
+            name: 'internalLink',
+            type: 'object',
+            title: 'Internal Link',
+            fields: [
+              {
+                name: 'item',
+                type: 'reference',
+                to: [
+                  {
+                    type: 'post'
+                  }
+                ]
+              }
+            ]
+          },
           {
             title: 'URL',
             name: 'link',
