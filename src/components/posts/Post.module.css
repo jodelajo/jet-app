@@ -109,6 +109,12 @@
   margin-bottom: 30px;
 }
 
+.postNavigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 800px) {
   .allPosts {
     padding: 20px;

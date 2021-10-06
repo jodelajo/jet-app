@@ -16,8 +16,13 @@ function urlFor(source) {
 export default function OnePost() {
   const [postData, setPostData] = useState(null);
   const { slug } = useParams();
+
   console.log("postdata", postData);
+
   console.log("slug", slug);
+  
+
+ 
 
   useEffect(() => {
     sanityClient
@@ -72,6 +77,15 @@ export default function OnePost() {
           projectId={sanityClient.clientConfig.projectId}
           dataset={sanityClient.clientConfig.dataset}
         />
+       
+      </div >
+      <div className={styles.postNavigation}>
+      <div className={styles.prevPost}>
+        Vorig bericht
+      </div >
+      <div className={styles.nextPost}>
+        Volgend bericht
+      </div>
       </div>
     </div>
   );

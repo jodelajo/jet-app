@@ -1,3 +1,5 @@
+import CustomId from "../components/CustomId"
+
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'post',
@@ -6,7 +8,7 @@ export default {
   fields: [
     {
       name: 'title',
-      title: 'Title',
+      title: 'Title!!',
       description: 'Keep it short',
       type: 'string',
     },
@@ -19,6 +21,13 @@ export default {
         maxLength: 96,
       },
     },
+    {
+      name: 'id',
+      title:'ID',
+      type: 'number',
+     
+    },
+
     {
       name: 'author',
       title: 'Author',
@@ -40,10 +49,15 @@ export default {
       of: [{type: 'reference', to: {type: 'category'}}],
     },
     {
+      name: 'nextPost',
+      title: 'Next Post',
+      type: 'number',
+    },
+    {
       name: 'publishedAt',
       title: 'Published at',
       description: 'test',
-      type: 'datetime',
+      type: 'date',
     },
     {
       name: 'body',
@@ -52,17 +66,37 @@ export default {
     },
   ],
 
+  orderings: [
+    {
+      title: 'Publish Date, New',
+      name: 'publishDateDesc',
+      by: [
+        {field: 'publishedAt', direction: 'desc'}
+      ]
+    },
+    {
+      title: 'Publish Date, Old',
+      name: 'publishDateAsc',
+      by: [
+        {field: 'publishedAt', direction: 'asc'}
+      ]
+    }],
+
+
   preview: {
     select: {
       title: 'title',
+      id: 'id',
       author: 'author.name',
       media: 'mainImage',
     },
     prepare(selection) {
-      const {author} = selection
+      const {author, id} = selection
       return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
+        subtitle: author && `by ${author} id-nummer ${id}`,
       })
     },
   },
+
+
 }
