@@ -48,11 +48,7 @@ export default {
       type: 'array',
       of: [{type: 'reference', to: {type: 'category'}}],
     },
-    {
-      name: 'nextPost',
-      title: 'Next Post',
-      type: 'number',
-    },
+
     {
       name: 'publishedAt',
       title: 'Published at',
