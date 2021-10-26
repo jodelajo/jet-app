@@ -7,7 +7,7 @@ import styles from './Post.module.css';
 
 export default function AllPosts() {
   const [allPostsData, setAllPosts] = useState(null);
-  console.log('All Posts Data', allPostsData);
+  // console.log('All Posts Data', allPostsData);
 
   useEffect(() => {
     sanityClient
@@ -48,6 +48,7 @@ export default function AllPosts() {
                     <h2>
                       {post.title}
                     </h2>
+                    
                     </div>
               </Link>
               </div>

@@ -1,11 +1,14 @@
 // src/component/OnePost.js
 
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams, } from "react-router-dom";
 import sanityClient from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import styles from "./Post.module.css";
+// import PostNav from "../postNav/PostNav";
+import { PostContext } from '../../context/PostContext';
+import { useContext } from 'react';
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -15,24 +18,72 @@ function urlFor(source) {
 
 export default function OnePost() {
   const [postData, setPostData] = useState(null);
+  const { contextData} = useContext(PostContext)
+  const [currentPost, setCurrentPost] = useState()
+  const [nextSlug, setNextSlug] = useState([])
+  const [prevSlug, setPrevSlug] = useState([])
+  const [localData, setLocalData] = useState([])
   const { slug } = useParams();
+  
+  useEffect(() => {
+    return () => {};
+  }, []);
+  
+  // console.log('contextdata in onepost', contextData);
 
   console.log("postdata", postData);
+  console.log('local data', localData);
 
-  console.log("slug", slug);
-  
+useEffect(()=> {
+  setLocalData(contextData)
+},[slug])
 
+
+// console.log('currentpost', currentPost && currentPost);
+// console.log('next', nextID);
+
+
+const currentId = localData && localData.find((post)=>
+{if(post.slug.current === slug)
+return post}
+)
  
+console.log('bla', currentId);
+
+
+
+useEffect(()=>{
+  const nextPost =  localData && localData.find(post => {
+    if(post.id === (currentId.id + 1)){
+      return post
+    }
+  })
+  setNextSlug(nextPost)
+  
+  const prevPost =  localData && localData.find(post => {
+    if(post.id === (currentId.id - 1)){
+      return post
+    }
+  })
+  setPrevSlug(prevPost)
+  
+},[currentId, localData])
+
+
+
+console.log('next slug', nextSlug);
+
+
 
   useEffect(() => {
     sanityClient
       .fetch(
         `*[slug.current == "${slug}"]{
           title,
-          id,
           _id,
           slug,
           publishedAt,
+          nextPost,
           mainImage,
          body,
          "name": author->name,
@@ -41,10 +92,14 @@ export default function OnePost() {
       )
       .then((data) => setPostData(data[0]))
       .catch(console.error);
-
   }, [slug]);
 
   if (!postData) return <div>Loading...</div>;
+
+
+
+  
+  
 
   return (
     <div className={styles.onePostContainer}>
@@ -81,10 +136,16 @@ export default function OnePost() {
       </div >
       <div className={styles.postNavigation}>
       <div className={styles.prevPost}>
-        Vorig bericht
+        {prevSlug && prevSlug.id >= 0 ? <Link to={`${prevSlug.slug.current}`}>
+       Vorig bericht
+       </Link> : <span>Vorig bericht</span>}
+      
       </div >
       <div className={styles.nextPost}>
-        Volgend bericht
+        {nextSlug &&  <Link to={`${nextSlug.slug.current}`}>
+       Volgend bericht
+       </Link>}
+      
       </div>
       </div>
     </div>

@@ -1,4 +1,3 @@
-import CustomId from "../components/CustomId"
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
