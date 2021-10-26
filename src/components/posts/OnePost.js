@@ -29,7 +29,7 @@ export default function OnePost() {
     return () => {};
   }, []);
   
-  // console.log('contextdata in onepost', contextData);
+  
 
   console.log("postdata", postData);
   console.log('local data', localData);
@@ -39,8 +39,6 @@ useEffect(()=> {
 },[slug, contextData])
 
 
-// console.log('currentpost', currentPost && currentPost);
-// console.log('next', nextID);
 
 // eslint-disable-next-line
 const currentId = localData && localData.find((post)=>
@@ -137,9 +135,9 @@ console.log('next slug', nextSlug);
       </div >
       <div className={styles.postNavigation}>
       <div className={styles.prevPost}>
-        {prevSlug && prevSlug.id >= 0 ? <Link to={`${prevSlug.slug.current}`}>
+        {prevSlug &&  <Link to={`${prevSlug.slug.current}`}>
        Vorig bericht
-       </Link> : <span>Vorig bericht</span>}
+       </Link>}
       
       </div >
       <div className={styles.nextPost}>
