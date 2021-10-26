@@ -19,7 +19,7 @@ function urlFor(source) {
 export default function OnePost() {
   const [postData, setPostData] = useState(null);
   const { contextData} = useContext(PostContext)
-  const [currentPost, setCurrentPost] = useState()
+  // const [currentPost, setCurrentPost] = useState()
   const [nextSlug, setNextSlug] = useState([])
   const [prevSlug, setPrevSlug] = useState([])
   const [localData, setLocalData] = useState([])
@@ -36,13 +36,13 @@ export default function OnePost() {
 
 useEffect(()=> {
   setLocalData(contextData)
-},[slug])
+},[slug, contextData])
 
 
 // console.log('currentpost', currentPost && currentPost);
 // console.log('next', nextID);
 
-
+// eslint-disable-next-line
 const currentId = localData && localData.find((post)=>
 {if(post.slug.current === slug)
 return post}
@@ -53,13 +53,14 @@ console.log('bla', currentId);
 
 
 useEffect(()=>{
+  // eslint-disable-next-line
   const nextPost =  localData && localData.find(post => {
     if(post.id === (currentId.id + 1)){
       return post
     }
   })
   setNextSlug(nextPost)
-  
+  // eslint-disable-next-line
   const prevPost =  localData && localData.find(post => {
     if(post.id === (currentId.id - 1)){
       return post
