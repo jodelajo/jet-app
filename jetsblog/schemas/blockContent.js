@@ -63,6 +63,8 @@ export default {
       type: 'image',
       options: {hotspot: true},
     },
-    {type: 'youtube',}
+    {type: 'youtube',
+    options: {hotspot: true},
+  }
   ],
 }

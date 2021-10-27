@@ -34,6 +34,7 @@
   margin-bottom: -60px;
 }
 
+
 .titleBlock {
     position: relative;
 }
@@ -113,6 +114,12 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  
+}
+
+.postNavigation a {
+  text-decoration: none;
+  color: var(--colors-accent);
 }
 
 @media only screen and (min-width: 800px) {

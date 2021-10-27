@@ -24,10 +24,11 @@ const serializers = {
     youtube: ({node}) => {
       const { url } = node
       const id = getYouTubeId(url)
-      return (<YouTube videoId={id} />)
+      return (<div className={styles.youtube}><YouTube videoId={id} /></div>)
     }
   }
 }
+
 
 export default function OnePost() {
   const [postData, setPostData] = useState(null);
@@ -130,12 +131,12 @@ export default function OnePost() {
         <div className={styles.postNavigation}>
         <div className={styles.prevPost}>
           {prevSlug && (
-            <Link to={`${prevSlug.slug.current}`}>Vorig bericht</Link>
+            <Link to={`${prevSlug.slug.current}`}>{`<< ${prevSlug.title}`}</Link>
           )}
         </div>
         <div className={styles.nextPost}>
           {nextSlug && (
-            <Link to={`${nextSlug.slug.current}`}>Volgend bericht</Link>
+            <Link to={`${nextSlug.slug.current}`}>{`${nextSlug.title} >>`}</Link>
           )}
         </div>
       </div>
