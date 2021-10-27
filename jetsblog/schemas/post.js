@@ -20,12 +20,6 @@ export default {
         maxLength: 96,
       },
     },
-    {
-      name: 'id',
-      title:'ID',
-      type: 'number',
-     
-    },
 
     {
       name: 'author',
@@ -47,12 +41,13 @@ export default {
       type: 'array',
       of: [{type: 'reference', to: {type: 'category'}}],
     },
-
     {
       name: 'publishedAt',
-      title: 'Published at',
-      description: 'test',
+      title: 'Gepubliceerd op',
       type: 'date',
+      options: {
+        dateFormat: 'DD-MM-YYYY',
+      }
     },
     {
       name: 'body',
@@ -86,9 +81,9 @@ export default {
       media: 'mainImage',
     },
     prepare(selection) {
-      const {author, id} = selection
+      const {author} = selection
       return Object.assign({}, selection, {
-        subtitle: author && `by ${author} id-nummer ${id}`,
+        subtitle: author && `by ${author}`,
       })
     },
   },
