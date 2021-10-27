@@ -7,8 +7,7 @@ export default {
   fields: [
     {
       name: 'title',
-      title: 'Title!!',
-      description: 'Keep it short',
+      title: 'Titel',
       type: 'string',
     },
     {
@@ -23,7 +22,7 @@ export default {
 
     {
       name: 'author',
-      title: 'Author',
+      title: 'Autheur',
       type: 'reference',
       to: {type: 'author'},
     },
@@ -35,6 +34,7 @@ export default {
         hotspot: true,
       },
     },
+
     {
       name: 'categories',
       title: 'Categories',
@@ -52,9 +52,19 @@ export default {
     {
       name: 'body',
       title: 'Body',
-      type: 'blockContent',
+      type: 'array',
+      of: [
+        {type: 'block'
+        },
+        {type: 'youtube'
+        },
+        {type: 'image'
+        },
+      ]
     },
   ],
+
+  
 
   orderings: [
     {

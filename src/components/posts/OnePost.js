@@ -5,6 +5,9 @@ import { Link, useParams } from "react-router-dom";
 import sanityClient from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import getYouTubeId from 'get-youtube-id'
+import YouTube from 'react-youtube'
+// import PortableText from '@sanity/block-content-to-react'
 import styles from "./Post.module.css";
 // import PostNav from "../postNav/PostNav";
 import { PostContext } from "../../context/PostContext";
@@ -13,6 +16,17 @@ import { useContext } from "react";
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
+}
+
+
+const serializers = {
+  types: {
+    youtube: ({node}) => {
+      const { url } = node
+      const id = getYouTubeId(url)
+      return (<YouTube videoId={id} />)
+    }
+  }
 }
 
 export default function OnePost() {
@@ -39,8 +53,6 @@ export default function OnePost() {
   const currentId =localData && localData.find((post) => {
       if (post.slug.current === slug) return post;
     });
-
-  console.log("bla", currentId);
 
   useEffect(() => {
     // eslint-disable-next-line
@@ -80,6 +92,7 @@ export default function OnePost() {
       .catch(console.error);
   }, [slug]);
 
+
   if (!postData) return <div>Loading...</div>;
 
   return (
@@ -111,7 +124,9 @@ export default function OnePost() {
           blocks={postData.body}
           projectId={sanityClient.clientConfig.projectId}
           dataset={sanityClient.clientConfig.dataset}
+          serializers={serializers}
         />
+         {/* <PortableText blocks={blocks} serializers={serializers} /> */}
         <div className={styles.postNavigation}>
         <div className={styles.prevPost}>
           {prevSlug && (
