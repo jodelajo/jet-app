@@ -36,9 +36,7 @@ export default function OnePost() {
   }, [slug, contextData]);
 
   // eslint-disable-next-line
-  const currentId =
-    localData &&
-    localData.find((post) => {
+  const currentId =localData && localData.find((post) => {
       if (post.slug.current === slug) return post;
     });
 
@@ -46,18 +44,14 @@ export default function OnePost() {
 
   useEffect(() => {
     // eslint-disable-next-line
-    const nextPost =
-      localData &&
-      localData.find((post) => {
+    const nextPost =localData && localData.find((post) => {
         if (post.id === currentId.id + 1) {
           return post;
         }
       });
     setNextSlug(nextPost);
     // eslint-disable-next-line
-    const prevPost =
-      localData &&
-      localData.find((post) => {
+    const prevPost = localData && localData.find((post) => {
         if (post.id === currentId.id - 1) {
           return post;
         }

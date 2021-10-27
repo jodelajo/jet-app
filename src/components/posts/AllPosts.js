@@ -8,7 +8,7 @@ import { PostContext } from "../../context/PostContext";
 
 export default function AllPosts() {
   const { contextData } = useContext(PostContext);
-  console.log('allposts', contextData);
+  // console.log('allposts', contextData);
 
   return (
     <div id="row">
